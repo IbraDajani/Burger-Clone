@@ -4,7 +4,7 @@ import BurgerGrid from './components/burger-grid/index';
 import MenuItem from './components/menu-item/index';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
-import styles from '../home/styles';
+import styles from './styles';
 
 const HomeScreen = () => {
   const [menu, setMenu] = useState(1);
@@ -12,7 +12,7 @@ const HomeScreen = () => {
   const DATA = [
     {
       title: 'Beef Burger',
-      description: 'Onion with cheese',
+      description: 'Beef with cheese',
       price: 18,
       buyDetail: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
       url: 'https://images-ext-2.discordapp.net/external/D2Yqlcv2Z-w47r0Ozh6z6QkLelp1-DqiSFhtWS9nj-c/https/upload.wikimedia.org/wikipedia/commons/1/11/Cheeseburger.png?width=1013&height=675',
@@ -59,12 +59,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          justifyContent: 'space-between',
-          flexDirection: 'row',
-          marginBottom: 50,
-        }}>
+      <View style={styles.iconsView}>
         <TouchableOpacity>
           <Icon name="bars" size={26} color="#fff" />
         </TouchableOpacity>

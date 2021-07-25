@@ -21,7 +21,7 @@ const Interna = ({route}) => {
     <View style={styles.container}>
       <View style={{height: 400, width: 400}}>
         <Image
-          resizeMode="stretch"
+          resizeMode="contain"
           style={{flex: 1}}
           source={{
             uri: burger.url,

@@ -15,6 +15,11 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginHorizontal: 10,
   },
+  iconsView: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    marginBottom: 50,
+  },
 });
 
 export default styles;
